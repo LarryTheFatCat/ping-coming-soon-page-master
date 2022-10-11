@@ -86,3 +86,8 @@ html {
     left: 13cm; 
     top: 9cm
 }
+
+.copyright-text {
+    position: relative;
+    top: 6.9cm;
+}
