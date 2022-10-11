@@ -91,3 +91,37 @@ html {
     position: relative;
     top: 6.9cm;
 }
+
+.fa-twitter {
+    position: relative;
+    top: 6.4cm;
+    outline: 1px solid #000;
+    border-radius: 20px;
+    outline-offset: 6px;
+    color: blue;
+    outline-color: hsl(223, 100%, 88%);
+}
+
+.fa-facebook-f {
+    position: relative;
+    top: 6.4cm;
+    left: -1.5cm;
+    outline: 1px solid #000;
+    border-radius: 50%;
+    outline-offset: 6px;
+    color: blue;
+    outline-color: hsl(223, 100%, 88%);
+    width: 0.4cm;
+}
+
+.fa-instagram {
+    position: relative;
+    top: 6.4cm;
+    left: cm;
+    outline: 1px solid #000;
+    border-radius: 50%;
+    outline-offset: 6px;
+    color: blue;
+    outline-color: hsl(223, 100%, 88%);
+    width: 0.4cm;
+}
