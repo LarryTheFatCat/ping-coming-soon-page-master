@@ -30,3 +30,8 @@ html {
     font-weight: 700;
     color: black;
 }
+
+.description-content {
+    position: relative;
+    top: -3.5cm;
+}
