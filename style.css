@@ -8,6 +8,25 @@
 html {
     display: grid;
     place-items: center;
+    text-align: center;
     height: 100vh;
     font-family: "Libre Franklin", "Arial", sans-serif;
+}
+
+.logo {
+    position: relative;
+    top: -6cm;
+}
+
+.title {
+    font-weight: 300;
+    position: relative;
+    top: -4cm; 
+    font-size: 40px;
+    color: hsl(0, 0%, 59%);
+}
+
+.title-word {
+    font-weight: 700;
+    color: black;
 }
