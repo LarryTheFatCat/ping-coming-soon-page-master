@@ -125,3 +125,12 @@ html {
     outline-color: hsl(223, 100%, 88%);
     width: 0.4cm;
 }
+
+.invalid-text {
+    position: relative;
+    top: -1cm;
+    left: -4.5cm;
+    font-size: 10px;
+    color: hsl(354, 100%, 66%);
+    display: none;
+}
