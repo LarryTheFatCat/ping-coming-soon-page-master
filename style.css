@@ -79,3 +79,10 @@ html {
 .btn-notify:hover {
     background-color: #9fb7f5;
 }
+
+.img-dashboard {
+    width: 544px;
+    position: absolute;
+    left: 13cm; 
+    top: 9cm
+}
