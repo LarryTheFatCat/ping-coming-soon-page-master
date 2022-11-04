@@ -26,14 +26,12 @@
     </div>
     <div class="notification-group">
       <form action="#">
-        <input class="notify-user"placeholder="Email Address" required>
+        <input class="notify-user" id="notify" placeholder="Email Address" required>
       </form>
-      <button class="btn-notify" onclick="checkEmail()">Notify Me</button>
-      <div class="invalid">
-        <p class="invalid-text">
-          Please Provide a valid Email Address
-        </p>
-      </div>
+      <button class="btn-notify" id="btn-notify" onclick="checkEmail()">Notify Me</button>
+      <span class="invalid" id="invalid-email" 
+      style="display: none;"></span>
+      <script src="script.js"></script>
     </div>
     <div class="icons">
       <i class="fa-brands fa-twitter"></i>
