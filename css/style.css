@@ -46,7 +46,7 @@ body {
     height: 1.2cm;
     border-radius: 20px;
     position: relative;
-    right: 2.9cm;
+    right: 1.5cm;
     text-indent: 0.6cm;
     outline-color: gray;
     border: 1px solid gray;
@@ -63,8 +63,8 @@ body {
 
 .btn-notify {
     position: relative;
-    left: 5.2cm;
-    top: -1.2cm;
+    left: 0.1cm;
+    top: 0.1cm;
     width: 5cm;
     height: 1.2cm;
     border-radius: 20px;
@@ -158,7 +158,8 @@ body {
     }
     .btn-notify {
         position: relative;
-        left: 0.2cm;
+        top: -1cm;
+        right: 9cm;
     }
     .img-dashboard {
         position: relative;
@@ -169,5 +170,11 @@ body {
 @media screen and (max-width: 375px) {
     .notify-user {
         width: 8cm;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .notify-user {
+        position: relative;
     }
 }

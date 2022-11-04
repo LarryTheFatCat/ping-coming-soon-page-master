@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/17abdb2eae.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Ping coming soon page</title>
@@ -26,15 +26,20 @@
     </div>
     <div class="notification-group">
       <form action="#">
-        <input class="notify-user" id="notify" placeholder="Email Address" required>
+        <input class="notify-user" id="notify" placeholder="Email Address" aria-label="Email" required>
+        <button class="btn-notify" id="btn-notify" onclick="checkEmail()" type="submit">Notify Me</button>  
       </form>
-      <button class="btn-notify" id="btn-notify" onclick="checkEmail()">Notify Me</button>  
-      <script src="index.js"></script>
     </div>
     <div class="icons">
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
     </div>
     <div class="Copyright-group">
       <p class="copyright-text">
@@ -45,5 +50,6 @@
       <img src="./images/illustration-dashboard.png" alt="Img" class="img-dashboard">
     </div>
   </div>
+  <script src="./js/index.js"></script>
 </body>
 </html>
