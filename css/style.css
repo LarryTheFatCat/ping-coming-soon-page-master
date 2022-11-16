@@ -4,5 +4,6 @@ body {
   justify-content: center;
   place-content: center;
   align-items: center;
-  margin: 0 auto;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
 }/*# sourceMappingURL=style.css.map */

@@ -16,12 +16,23 @@
     <h1 class="title-content">
       We are launching soon!
     </h1>
-
-    Subscribe and get notified
-
-    Notify Me
-
-    &copy; Copyright Ping. All rights reserved.
+    <h2 class="description-content">
+      Subscribe and get notified
+    </h2>
+    <div class="inputs">
+      <form action="">
+        <input type="text" class="notifyUser" id="notify" aria-required="true" placeholder="Your email address..." required>
+        <!--    evt.preventDefault(); -->
+        <button class="btn-notify" id="btn" onclick="validate()" aria-required="true">
+          Notify Me
+        </button>
+      </form>
+    </div>
+    <img src="./images/illustration-dashboard.png" alt="illustration dashboard image">
+    <br>
+    <p class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
   </div>
 
 </body>
