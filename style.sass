@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap')
 
-
-
-$blue hsl(223, 87%, 63%)
-$paleBlue hsl(223, 100%, 88%)
-$lightRed hsl(354, 100%, 66%)
-$gray hsl(0, 0%, 59%)
-$veryDarkBlue hsl(209, 33%, 12%)
+$blue: hsl(223, 87%, 63%)
+$paleBlue: hsl(223, 100%, 88%)
+$lightRed: hsl(354, 100%, 66%)
+$gray: hsl(0, 0%, 59%)
+$veryDarkBlue: hsl(209, 33%, 12%)
 
 @mixin displayFlex
     display: flex
     justify-content: center
     place-content: center
     align-items: center
+    margin: 0 auto
     
 body
     @include displayFlex
-    margin: 0 auto
