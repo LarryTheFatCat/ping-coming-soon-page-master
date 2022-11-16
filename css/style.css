@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 body {
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  place-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
