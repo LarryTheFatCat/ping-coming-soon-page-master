@@ -12,23 +12,23 @@
 
 <body>
   <div class="container">
-    <img src="./images/logo.svg" alt="company logo">
+    <img src="./images/logo.svg" alt="company logo" id="logo">
     <h1 class="title-content">
-      We are launching soon!
+      We are launching <span class="title-word">soon!</span>
     </h1>
     <h2 class="description-content">
       Subscribe and get notified
     </h2>
     <div class="inputs">
       <form action="">
-        <input type="text" class="notifyUser" id="notify" aria-required="true" placeholder="Your email address..." required>
+        <input type="email" class="notifyUser" id="notify" aria-required="true" placeholder="Your email address..." aria-describedby="name-alert" data-id="email" required>
         <!--    evt.preventDefault(); -->
         <button class="btn-notify" id="btn" onclick="validate()" aria-required="true">
           Notify Me
         </button>
       </form>
     </div>
-    <img src="./images/illustration-dashboard.png" alt="illustration dashboard image">
+    <img src="./images/illustration-dashboard.png" alt="illustration dashboard image" id="secondLogo">
     <br>
     <p class="copyright">
       &copy; Copyright Ping. All rights reserved.

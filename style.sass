@@ -4,6 +4,7 @@ $blue: hsl(223, 87%, 63%)
 $paleBlue: hsl(223, 100%, 88%)
 $lightRed: hsl(354, 100%, 66%)
 $gray: hsl(0, 0%, 59%)
+$black: hsl(0, 0%, 0%)
 $veryDarkBlue: hsl(209, 33%, 12%)
 $fontFamily: 'Libre Franklin', sans-serif
 
@@ -17,3 +18,28 @@ $fontFamily: 'Libre Franklin', sans-serif
 body
     @include displayFlex
     font-family: $fontFamily
+    padding: 1cm
+
+
+#logo
+    width: 5%
+
+#secondLogo
+    width: 50%
+    margin-top: 1cm
+
+.title-content
+    font-weight: 300
+    color: $gray
+    font-size: 40px
+    margin-top: 0.6cm
+
+.title-word
+    color: $black
+    font-weight: 700
+
+.description-content
+    font-weight: 300
+    color: $veryDarkBlue
+    font-size: 15px
+    margin-top: -0.5cm

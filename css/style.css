@@ -6,4 +6,33 @@ body {
   align-items: center;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
+  padding: 1cm;
+}
+
+#logo {
+  width: 5%;
+}
+
+#secondLogo {
+  width: 50%;
+  margin-top: 1cm;
+}
+
+.title-content {
+  font-weight: 300;
+  color: hsl(0deg, 0%, 59%);
+  font-size: 40px;
+  margin-top: 0.6cm;
+}
+
+.title-word {
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 700;
+}
+
+.description-content {
+  font-weight: 300;
+  color: hsl(209deg, 33%, 12%);
+  font-size: 15px;
+  margin-top: -0.5cm;
 }/*# sourceMappingURL=style.css.map */
