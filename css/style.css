@@ -10,7 +10,7 @@ body {
 }
 
 #logo {
-  width: 5%;
+  min-width: 2%;
 }
 
 #secondLogo {
@@ -35,4 +35,33 @@ body {
   color: hsl(209deg, 33%, 12%);
   font-size: 15px;
   margin-top: -0.5cm;
+}
+
+.notifyUser {
+  width: 10cm;
+  height: 1cm;
+  border-radius: 20px;
+  text-indent: 0.5cm;
+  font-family: inherit;
+  font-weight: 300;
+  border-style: solid;
+  border-color: hsl(0deg, 0%, 59%);
+  border-width: 0.01cm;
+}
+
+.btn-notify {
+  width: 5cm;
+  height: 1cm;
+  border-radius: 20px;
+  border-style: none;
+  background-color: hsl(223deg, 87%, 63%);
+  font-family: inherit;
+  font-weight: 700;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn-notify:hover {
+  height: 1.1cm;
 }/*# sourceMappingURL=style.css.map */
