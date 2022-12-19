@@ -137,6 +137,32 @@ body {
     top: 5cm;
 }
 
+.errorMessage {
+    color: red;
+    position: relative;
+    left: -5cm;
+    font-size: 10px;
+    animation: errorBlink 2s infinite;
+    display: none;
+}
+
+#error-message-invalid {
+    left: -5.75cm;
+}
+
+@keyframes errorBlink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
 @media screen and (max-width: 562px) {
     .icons {
         display: flex;

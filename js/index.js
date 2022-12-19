@@ -1,24 +1,22 @@
 const email = document.getElementById("notify");
 const button = document.getElementById("btn-notify");
-const errorMessage = document.getElementById("error-message");
+const errorMessageBlank = document.getElementById("error-message-blank");
+const errorMessageInvalid = document.getElementById("error-message-invalid");
 
 function checkEmail() {
   let email = document.getElementById("notify");
   let validation;
-  let re = /\S+@\S+\.\S+/;
+  let emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+  
+  validation = emailRegex.test(email.value);
 
-  validation = re.test(email.value);
   console.log(validation);
 
-  if(validation === true) {
-    email.setAttribute('style', 'border: 3px solid #4f7df3;');
-  } else {
-    email.setAttribute('style', 'border: 3px solid #ff5263;');
+  if(email.value === "") {
+    errorMessageBlank.style.display = "block";
+  } else if(validation === false) {
+    errorMessageInvalid.style.display = "block";
   }
 
-  if(email === "") {
-    email.setAttribute('style', 'border: 3px solid #4f7df3;');
-  } else {
-    email.setAttribute('style', 'border: 3px solid #ff5263;');
-  }
+
 }

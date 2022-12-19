@@ -28,8 +28,11 @@
       <form action="#">
         <input class="notify-user" id="notify" placeholder="Email Address" aria-label="Email" required>
         <button class="btn-notify" id="btn-notify" onclick="checkEmail()" type="submit">Notify Me</button>  
-        <p class="errorMessage" id="error-message">
-          
+        <p class="errorMessage" id="error-message-blank">
+          Whoops! It looks like you forgot to add your email
+        </p>
+        <p class="errorMessage" id="error-message-invalid">
+          Please provide a valid email address
         </p>
       </form>
     </div>
