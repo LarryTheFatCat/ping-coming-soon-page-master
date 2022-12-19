@@ -14,6 +14,11 @@ function checkEmail() {
     email.setAttribute('style', 'border: 3px solid #4f7df3;');
   } else {
     email.setAttribute('style', 'border: 3px solid #ff5263;');
-    res.innerHTML = "please enter a valid email address!";
+  }
+
+  if(email === "") {
+    email.setAttribute('style', 'border: 3px solid #4f7df3;');
+  } else {
+    email.setAttribute('style', 'border: 3px solid #ff5263;');
   }
 }
