@@ -5,6 +5,7 @@ const errorMessageInvalid = document.getElementById("error-message-invalid");
 
 function checkEmail() {
   const email = document.getElementById("notify");
+  // let validation; // No reason setting it here
   const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
   
   // we never change it so why not just have it as const
@@ -12,10 +13,7 @@ function checkEmail() {
 
   console.log(validation);
 
-  if(email.value === "") {
+  if(!validation) {
     errorMessageBlank.style.display = "block";
-  // it should always be true or false so you can just do !validation
-  } else if (!validation) {
-    errorMessageInvalid.style.display = "block";
   }
 }
