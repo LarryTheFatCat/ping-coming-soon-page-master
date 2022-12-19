@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/17abdb2eae.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
-
 <body>
   <div class="container">
-    <img src="./images/logo.svg" alt="company logo" id="logo">
-    <h1 class="title-content">
-      We are launching <span class="title-word">soon!</span>
-    </h1>
-    <h2 class="description-content">
-      Subscribe and get notified
-    </h2>
-    <div class="inputs">
-      <form action="">
-        <input type="email" class="notifyUser" id="notify" aria-required="true" placeholder="Your email address..." aria-describedby="name-alert" data-id="email" required>
-        <!--    evt.preventDefault(); -->
-        <a href="#">
-          <button class="btn-notify" id="btn" onclick="validate()" aria-required="true">
-            Notify Me 
-          </button>
-        </a>
+    <img src="./images/logo.svg" alt="Logo" class="logo">
+    <div class="title-content">
+      <p class="title">
+        We are launching
+        <span class="title-word">
+          soon!
+        </span>
+      </p>
+    </div>
+    <div class="description-content">
+      <p class="description">
+        Subscribe and get notified
+      </p>
+    </div>
+    <div class="notification-group">
+      <form action="#">
+        <input class="notify-user" id="notify" placeholder="Email Address" aria-label="Email" required>
+        <button class="btn-notify" id="btn-notify" onclick="checkEmail()" type="submit">Notify Me</button>  
       </form>
     </div>
-    <img src="./images/illustration-dashboard.png" alt="illustration dashboard image" id="secondLogo">
-    <br>
-    <p class="copyright">
-      &copy; Copyright Ping. All rights reserved.
-    </p>
+    <div class="icons">
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <div class="Copyright-group">
+      <p class="copyright-text">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </div>
+    <div class="img">
+      <img src="./images/illustration-dashboard.png" alt="Img" class="img-dashboard">
+    </div>
   </div>
-
+  <script src="./js/index.js"></script>
 </body>
-
 </html>

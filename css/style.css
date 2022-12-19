@@ -1,67 +1,180 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  place-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: "Libre Franklin", sans-serif;
-  padding: 1cm;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+    font-family: "Libre Franklin", "Arial", sans-serif;
 }
 
-#logo {
-  min-width: 2%;
+.logo {
+    position: relative;
+    top: -1cm;
 }
 
-#secondLogo {
-  width: 50%;
-  margin-top: 1cm;
-}
-
-.title-content {
-  font-weight: 300;
-  color: hsl(0deg, 0%, 59%);
-  font-size: 40px;
-  margin-top: 0.6cm;
+.title {
+    font-weight: 300;
+    position: relative;
+    top: 0cm; 
+    font-size: 40px;
+    color: hsl(0, 0%, 59%);
 }
 
 .title-word {
-  color: hsl(0deg, 0%, 0%);
-  font-weight: 700;
+    font-weight: 700;
+    color: black;
 }
 
 .description-content {
-  font-weight: 300;
-  color: hsl(209deg, 33%, 12%);
-  font-size: 15px;
-  margin-top: -0.5cm;
+    position: relative;
+    top: 0.2cm;
 }
 
-.notifyUser {
-  width: 10cm;
-  height: 1cm;
-  border-radius: 20px;
-  text-indent: 0.5cm;
-  font-family: inherit;
-  font-weight: 300;
-  border-style: solid;
-  border-color: hsl(0deg, 0%, 59%);
-  border-width: 0.01cm;
+.notification-group {
+    position: relative;
+    top: 1cm;
+}
+
+.notify-user {
+    width: 9cm;
+    height: 1.2cm;
+    border-radius: 20px;
+    position: relative;
+    right: 1.5cm;
+    text-indent: 0.6cm;
+    outline-color: gray;
+    border: 1px solid gray;
+    transition-delay: 50ms;
+    transition-timing-function: ease-in;
+    font-family: inherit;
+}
+
+.notify-user:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
 }
 
 .btn-notify {
-  width: 5cm;
-  height: 1cm;
-  border-radius: 20px;
-  border-style: none;
-  background-color: hsl(223deg, 87%, 63%);
-  font-family: inherit;
-  font-weight: 700;
-  color: white;
-  transition: 0.5s;
-  cursor: pointer;
+    position: relative;
+    left: 0.1cm;
+    top: 0.1cm;
+    width: 5cm;
+    height: 1.2cm;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    font-family: Inherit;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
 }
 
 .btn-notify:hover {
-  height: 1.1cm;
-}/*# sourceMappingURL=style.css.map */
+    background-color: #9fb7f5;
+}
+
+.img-dashboard {
+    width: 50%;
+}
+
+.copyright-text {
+    position: relative;
+    top: 11.9cm;
+}
+
+.fa-twitter {
+    position: relative;
+    top: 6.4cm;
+    outline: 1px solid #000;
+    border-radius: 20px;
+    outline-offset: 6px;
+    color: blue;
+    outline-color: hsl(223, 100%, 88%);
+}
+
+.fa-facebook-f {
+    position: relative;
+    top: 6.4cm;
+    left: -1.5cm;
+    outline: 1px solid #000;
+    border-radius: 50%;
+    outline-offset: 6px;
+    color: blue;
+    outline-color: hsl(223, 100%, 88%);
+    width: 0.4cm;
+}
+
+.fa-instagram {
+    position: relative;
+    top: 6.4cm;
+    left: cm;
+    outline: 1px solid #000;
+    border-radius: 50%;
+    outline-offset: 6px;
+    color: blue;
+    outline-color: hsl(223, 100%, 88%);
+    width: 0.4cm;
+}
+
+.invalid-text {
+    position: relative;
+    top: -1cm;
+    left: -4.5cm;
+    font-size: 10px;
+    color: hsl(354, 100%, 66%);
+    display: none;
+}
+
+.icons {
+    position: relative;
+    top: 5cm;
+}
+
+@media screen and (max-width: 562px) {
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fa-facebook-f {
+        position: relative;
+        left: 1.2cm;
+    }
+    .copyright-text {
+        position: relative;
+        left: 0.2cm;
+    }
+    .notify-user {
+        position: relative;
+        top: 2cm;
+        left: 0.2cm;
+    }
+    .btn-notify {
+        position: relative;
+        top: -1cm;
+        right: 9cm;
+    }
+    .img-dashboard {
+        position: relative;
+        top: 2cm;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .notify-user {
+        width: 8cm;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .notify-user {
+        position: relative;
+    }
+}
