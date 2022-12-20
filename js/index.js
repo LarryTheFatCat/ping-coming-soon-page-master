@@ -4,16 +4,17 @@ const errorMessageBlank = document.getElementById("error-message-blank");
 const errorMessageInvalid = document.getElementById("error-message-invalid");
 
 function checkEmail() {
-  const email = document.getElementById("notify");
-  // let validation; // No reason setting it here
-  const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
-  
-  // we never change it so why not just have it as const
-  const validation = emailRegex.test(email.value);
+  let email = document.getElementById("notify");
+  let emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+  let validation = emailRegex.test(email.value);
 
   console.log(validation);
 
-  if(!validation) {
+  if(email.value === "") {
     errorMessageBlank.style.display = "block";
+  } else if(validation === false) {
+    errorMessageInvalid.style.display = "block";
   }
+
+
 }
