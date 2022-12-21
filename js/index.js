@@ -4,17 +4,17 @@ const errorMessageBlank = document.getElementById("error-message-blank");
 const errorMessageInvalid = document.getElementById("error-message-invalid");
 
 function checkEmail() {
-  let email = document.getElementById("notify");
-  let emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
-  let validation = emailRegex.test(email.value);
+  const email = document.getElementById("notify");
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+  const validationEmail = emailRegex.test(email.value); 
 
-  console.log(validation);
-
-  if(email.value === "") {
-    errorMessageBlank.style.display = "block";
-  } else if(validation === false) {
-    errorMessageInvalid.style.display = "block";
-  }
-
+  
+if(email.value === "") {
+  errorMessageInvalid.style.display = "";
+  errorMessageBlank.style.display = "block";
+} else if(validationEmail === false) { 
+  errorMessageBlank.style.display = "";
+  errorMessageInvalid.style.display = "block";
+}
 
 }
