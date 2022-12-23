@@ -9,12 +9,8 @@ function checkEmail() {
   const validationEmail = emailRegex.test(email.value); 
 
   
-if(email.value === "") {
-  errorMessageInvalid.style.display = "";
-  errorMessageBlank.style.display = "block";
-} else if(validationEmail === false) { 
-  errorMessageBlank.style.display = "";
-  errorMessageInvalid.style.display = "block";
-}
+  let isEmpty = email.value === "";
+  errorMessageBlank.style.display = isEmpty? "block" : "";
+  errorMessageInvalid.style.display= (!validationEmail && !isEmpty)? "block" : ""
 
 }
